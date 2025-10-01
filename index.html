@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <form id="color-form">
-            <input type="color" id="color"/>
-            <select id="theme">
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome-dark</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic-complement</option>
-                <option value="triad">Triad</option>
-            </select>
-            <button type="submit">Get color scheme</button>
-        </form>
-        <div id="color-container">
-        </div>
+        <main>
+            <form id="color-form">
+                <input type="color" id="color"/>
+                <select id="theme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button class="submit" type="submit">Get color scheme</button>
+            </form>
+            <div id="color-container">
+                <div>
+                    <div class="block" id="color-one"></div>
+                    <p id="label-one"></p>
+                </div>
+                <div>
+                    <div class="block" id="color-two"></div>
+                    <p id="label-two"></p>
+                </div>
+                <div>
+                    <div class="block" id="color-three"></div>
+                    <p id="label-three"></p>
+                </div>
+                <div>
+                    <div class="block" id="color-four"></div>
+                    <p id="label-four"></p>
+                </div>
+                <div>
+                    <div class="block" id="color-five"></div>
+                    <p id="label-five"></p>
+                </div>
+            </div>
+        </main>
     <script src="index.js" type="module"></script>
     </body>
 </html>
